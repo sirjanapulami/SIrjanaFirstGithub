@@ -4,6 +4,11 @@
 <head>
     <title>Personal Details</title>
     <style>
+        td {
+            width: 80px;
+            height: 10px;
+        }
+
         #card {
             background-color: #ccc;
             width: fit-content;
@@ -12,18 +17,30 @@
             font-size: 18px;
             border-radius: 4px;
             line-height: 1.8;
-           
+
         }
+
         input {
             padding: 4px;
             border-radius: 3px;
         }
+
         #pdetails {
             text-align: center;
         }
 
         .flex {
             display: flex;
+            gap: 10px;
+
+        }
+
+        .name input {
+            width: 300px;
+        }
+
+        .phoneno input {
+            width: 300px;
         }
     </style>
 </head>
@@ -34,18 +51,17 @@
                 <div id="pdetails"> PERSONAL DETAILS</div>
             </b></caption><br>
         <form action="#" method="get">
-            <div class="flex">
+            <div class="flex name">
                 <div>First Name <br> <input type="text" name="txtname" /></div>
 
-                <div> Middle Name <br><input type="xyz" name="txtmiddle" /></div>
+                <div> Middle Name <br><input type="text" name="txtmiddle" /></div>
 
-                <div> Last Name <br> <input type="abc" name="txtlast" /></div>
+                <div> Last Name <br> <input type="text" name="txtlast" /></div>
             </div>
 
-            <div>
+            <div class="phoneno">
                 Date of Birth <input type="asd" name="txtdob" />
-            </div>
-            <div>
+
                 Nationality <select name="selcountry">
                     <option value="nep">Nepal</option>
                     <option value="usa">USA</option>
@@ -56,54 +72,95 @@
                     <option value="Jap">Japan</option>
                     <option value="korea">Korea</option>
                 </select>
-                <br>Gender <input type="radio" name="radiogender" value="male" />Male
-                <input type="radio" name="radiogender" value="female" />Female
-                <input type="radio" name="radiogender" value="others" />others
             </div>
+            Gender <input type="radio" name="radiogender" value="male" />Male
+            <input type="radio" name="radiogender" value="female" />Female
+            <input type="radio" name="radiogender" value="others" />others
+
             <div>
                 Martial status <input type="radio" name="radiostat" />Single
                 <input type="radio" name="radiostat" />Married
                 <input type="radio" name="radiostat" />Divorce
                 <input type="radio" name="radiostat" />Widow
             </div>
-            <div>
-                Phone no. <input type="jgh" name="phn" />
+            <div class="phoneno">
+                Phone no. <input type="text" name="phn" />
+            </div>
+            <div class="phoneno">
+                Temporary Address <input type="text" name="tadd" />
+                Ward no. <input type="text" name="" id="ward" />
+            </div>
+            <div class="phoneno">
+                Permanent Address <input type="text" name="paddress" />
+                Ward no. <input type="text" name="" id="Padd">
+            </div>
+            <div class="phoneno">
+                Citizenship no. <input type="text" name="ctno" />
+            </div>
+            <div class="phoneno">    
+                Passport no. <input type="text" name="passno" />
+            </div>
+            <div class="phoneno">
+                Father's Name <input type="text" name="fthnme" />
+
+
+                Phone no <input type="text" name="pnfth" />
+
+            </div>
+            <div class="phoneno">
+                Mother's Name <input type="text" name="mthnam" />
+
+
+                Phone no <input type="text" name="mthpno" />
+            </div>
+            <div class="phoneno">
+                Grandfather's Name <input type="text" name="gfnme" />
+            </div>
+            <div class="phoneno">
+                Grandmother's Name <input type="text" name="gmth" />
             </div>
             <div>
-                Temporary Address <input type="njk" name="tadd" />
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Year</th>
+                        <th>Board</th>
+                        <th>GPA</th>
+                    </tr>
+                    <tr>
+                        <th>Secondary School</th>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>High School</th>
+                        <td><input type="text" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>Undergraduate</th>
+                        <td><input type="text" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                </table>
+                <div>
+                    Hobby <input type="checkbox" name="checkboxstatus" />Dancing
+                    <input type="checkbox" name="checkboxstatus" />Singing
+                    <input type="checkbox" name="checkboxstatus" />Travelling
+                    <input type="checkbox" name="checkboxstatus" />Swimming
+                </div>
             </div>
-            <div>
-                Permanent Address <input type="mkji" name="paddress" />
-            </div>
-            <div>
-                Citizenship no <input type="lakd" name="ctno" />
-            </div>
-            Passport no <input type="kvj" name="passno" />
-            <div>
-                Father's Name <input type="nnnx" name="fthnme" />
-            </div>
-            <div>
-                Phone no <input type="mkj" name="pnfth" />
-            </div>
-            <div>
-                Mother's Name <input type="bnd" name="mthnam" />
-            </div>
-            <div>
-                Phone no <input type="mlak" name="mthpno" />
-            </div>
-            <div>
-                Grandfather's Name <input type="ngh" name="gfnme" />
-            </div>
-            <div>
-                Grandmother's Name <input type="mji" name="gmth" />
-            </div>
-            <textarea rows="10" cols="65.5" placeholder="Personal details....."></textarea>
+            <textarea rows="10" cols="110" placeholder="Personal details....."></textarea>
             <div class="flex">
                 <button type="submit">Save</button>
                 <button type="reset">Clear</button>
             </div>
+
     </div>
-    
+
     </form>
 </body>
 
