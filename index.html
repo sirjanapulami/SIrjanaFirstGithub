@@ -1,31 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sirjana Pulami Lab</title>
     <style>
-        .toc {
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            display: block;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            background-color: white;
+            color: #155BD7;
+            height: 40px;
+        }
+
+        .home a {
+            color: white;
+
+        }
+
+        .circle {
+            border-radius: 100%;
+            padding: 10px;
+        }
+
+        .home {
+            /* height: 80vh; */
+            background-color: #155BD7;
+            text-align: left;
+            color: white;
+            padding-left: 80px;
+            padding-right: 80px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .homecontainer {
+            padding-top: 150px;
+            padding-bottom: 200px;
             display: flex;
-            flex-direction: column;
+
+        }
+
+        .left {
+            width: 50%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .right {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .right img {
+            width: 100%;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav .left-nav {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .nav li {
+            list-style: none;
+        }
+        .nav li a {
+
         }
     </style>
 </head>
+
 <body>
-    <div class="toc">
-        <a href="/form/personaldetails.html">Personal Details</a>
-        
-        <a href="/media/audio.html">Audio</a>
-        <a href="/media/video.html">Video</a>
-        <a href="/media/Youtube.html">Youtube</a>
+    <div class="home">
+        <div class="nav">
+            <div class="left-nav">
+                <li class="logo">SIRJANA</li>
+                <li class="nav-item"><a href="/">Home</a></li>
+                <li class="nav-item"><a href="/toc.html">TOC</a></li>
+                <li class="nav-item"><a href="/solarsystem/Animation.html">Solar System</a></li>
 
-        <a href="/gui/ludo.html">Ludo</a>
-        <a href="/gui/chess.html">Chess</a>
+            </div>
+            <div class="right-nav">
+                Right
+            </div>
+        </div>
+        <div class="homecontainer">
+            <div class="left">
+                <div>
+                    <h1>Sirjana's Diary</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, libero? Tenetur hic soluta, beatae
+                        repellendus sapiente ea consectetur laboriosam perferendis officia nulla eveniet harum corrupti,
+                        eligendi quasi ex, laudantium ducimus?</p>
 
-        <a href="/practice/list.html">List Practice</a>
-        <a href="/solarsystem/Animation.html">Solar System</a>
-        <a href="/Facebook/Login.html">Facebook Log In</a>
-        
+                    <div class="actions">
+                        <a href="/toc.html"><button class="gtst">Get Started</button></a>
+                        <button class="circle">sp</button>
+                        <a href="suraj">suraj pulami magar</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="right"><img src="./images/info.webp"></div>
+
+        </div>
     </div>
 </body>
+
 </html>
