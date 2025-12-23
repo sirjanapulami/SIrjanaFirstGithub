@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        body{
+           border-width: 2px;
+            border-style: solid;
+            display: grid;
+           grid-template-rows: 100px;
+           border-color: black;
+           grid-template-columns: 100px;
+           grid-template-areas:
+           "black black black black black" 
+           "red A B C green"
+           "red D Apple Apple green"
+           "blue blue blue blue blue";
+           text-align: center;
+          max-width: 500px;
+           
+
+        }
+    
+        
+        .black{
+            grid-area: black;
+            border-style: solid;
+            border-width: 2px;
+            padding: 40px;
+            background-color: black;
+
+        }
+        .green{
+           grid-area: green;
+           border-style: solid;
+            border-width: 2px;
+             padding: 40px;
+             background-color: green;
+
+        }
+        .red{
+           grid-area: red;
+           border-style: solid;
+            border-width: 2px;
+             padding: 40px;
+             background-color: red;
+
+        }
+        .blue{
+            grid-area: blue;
+            border-style: solid;
+            border-width: 2px;
+             padding: 40px;
+             background-color: blue;
+
+        }
+        .A{
+            grid-area: A;
+            border-style: solid;
+            border-width: 2px;
+             padding: 40px;
+
+        }
+        .B{
+            grid-area: B;
+            border-style: solid;
+            border-width: 2px;
+             padding: 40px;
+
+        }
+        .C{
+            grid-area: C;
+            border-style: solid;
+            border-width: 2px;
+             padding: 40px;
+
+        }
+        .D{
+            grid-area: D;
+            border-style: solid;
+            border-width: 2px;
+             padding: 40px;
+
+        }
+        .Apple{
+            grid-area: Apple;
+            border-style: solid;
+            border-width: 2px;
+             padding: 40px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="A">A</div>
+    <div class="B">B</div>
+    <div class="C">C</div>
+    <div class="green"></div>
+    <div class="D">D</div>
+    <div class="Apple">Apple</div>
+    <div class="blue"></div>
+
+
+</body>
+</html>
