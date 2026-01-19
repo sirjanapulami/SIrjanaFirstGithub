@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+    <style>
+        body{
+            margin-top: 50px;
+            margin-left: 50px;
+            border: 2px  solid black ;
+            display: flex;
+            width: 500px;
+            height: 500px;
+        }
+        .cal{
+            text-align: center;
+        }
+       #number{
+       width: 100%;
+       }
+    </style>
+    <script>
+        function add() {
+            const a = parseInt(document.getElementById("a").value);
+            const b = parseInt(document.getElementById("b").value);
+            document.getElementById("word").value = a + b;
+
+        }
+        function product() {
+            const a = parseInt(document.getElementById("a").value);
+            const b = parseInt(document.getElementById("b").value);
+            document.getElementById("word").value = a * b;
+        }
+         function divide() {
+            const a = parseInt(document.getElementById("a").value);
+            const b = parseInt(document.getElementById("b").value);
+            document.getElementById("word").value = a / b;
+        }
+        function subtract() {
+            const a = parseInt(document.getElementById("a").value);
+            const b = parseInt(document.getElementById("b").value);
+            document.getElementById("word").value = a - b;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="number">
+       <h1 class="cal">Calculator</h1>
+       
+        Result: <input type="text" id="word" name="word" /><br>
+        a: <input type="text" id="a" name="word" /><br>
+        b: <input type="text" id="b" name="word" /><br>
+
+
+        <button type="button" onclick="add()">Add</button>
+        <button type="button" onclick="subtract()">Subtract</button>
+        <button type="button" onclick="product()">Product</button>
+        <button type="button" onclick="divide()">Divide</button>
+
+    </div>
+</body>
+
+</html>

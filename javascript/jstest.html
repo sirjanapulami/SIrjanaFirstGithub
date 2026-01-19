@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <style>
+        #month{
+           border-bottom: 1px solid black;
+           width: 200px;
+           margin: 15px;
+           margin-left: 0;
+           font-size: 32px;
+        }
+    </style>
+    <script>
+        function engbuttonclick(){
+        const month = document.getElementById("month")
+            const value = document.getElementById("word").value;
+            if(value == "1"){
+                month.innerHTML="January"
+            }
+            else if(value == "2"){
+                month.innerHTML="February"
+            }
+            else if(value == "3"){
+                month.innerHTML="March"
+            }
+            else if(value == "4"){
+                month.innerHTML="April"
+            }
+            else if(value == "5"){
+                month.innerHTML="May"
+            }
+            else if(value == "6"){
+                month.innerHTML="June"
+            }
+            else if(value == "7"){
+                month.innerHTML="July"
+            }
+            else if(value == "8"){
+                month.innerHTML="August"
+            }
+            else if(value == "9"){
+                month.innerHTML="September"
+            }
+            else if(value == "10"){
+                month.innerHTML="October"
+            }
+            else if(value == "11"){
+                month.innerHTML="November"
+            }
+             else if(value == "12"){
+                month.innerHTML="December"
+            }
+        }
+        function nepbuttonclick(){
+        const month = document.getElementById("month")
+            const value = document.getElementById("word").value;
+            if(value == "1"){
+                month.innerHTML="Baishakh"
+            }
+            else if(value == "2"){
+                month.innerHTML="Jestha"
+            }
+            else if(value == "3"){
+                month.innerHTML="Ashar"
+            }
+            else if(value == "4"){
+                month.innerHTML="Shrawn"
+            }
+            else if(value == "5"){
+                month.innerHTML="Bhadra"
+            }
+            else if(value == "6"){
+                month.innerHTML="Ashoj"
+            }
+            else if(value == "7"){
+                month.innerHTML="Kartik"
+            }
+            else if(value == "8"){
+                month.innerHTML="MAngsir"
+            }
+            else if(value == "9"){
+                month.innerHTML="Poush"
+            }
+            else if(value == "10"){
+                month.innerHTML="Magh"
+            }
+            else if(value == "11"){
+                month.innerHTML="Falgun"
+            }
+             else if(value == "12"){
+                month.innerHTML="Chaitra"
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Enter the month number</h1><br>
+    <div id="month"></div><br>
+    
+        <h2>Month: <input type="text" id="word" name="word"/>
+           
+        <button type="button" onclick="engbuttonclick()">Eng</button>
+        <button type="button" onclick="nepbuttonclick()">Nep</button>
+             </h2>
+   
+</body>
+</html>
